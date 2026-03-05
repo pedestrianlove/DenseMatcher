@@ -8,4 +8,6 @@ checkpoints
 *.so
 **/build
 *.egg-info
-__pycache__
+__pycache__# pixi environments
+.pixi/*
+!.pixi/config.toml
