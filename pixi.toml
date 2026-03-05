@@ -11,6 +11,7 @@ FORCE_CUDA = "1"
 
 [tasks]
 build = { cmd = "pip install -e ./third_party/Mask2Former && pip install -e ." }
+test = { cmd = "jupyter nbconvert --execute --to notebook example.ipynb" }
 
 [dependencies]
 python = "3.9.*"
@@ -65,5 +66,6 @@ notebook = "==6.5.6"
 igraph = "==0.11.5"
 pymeshlab = ">=2022.2.post3, <2023"
 huggingface-hub = "==0.25.2"
+gdown = ">=5.2.1, <6"
 
 # mask2former = { path = "./third_party/Mask2Former", editable = true }
