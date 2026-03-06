@@ -8,6 +8,7 @@ version = "0.1.0"
 [activation.env]
 CUDA_HOME = "$CONDA_PREFIX"
 FORCE_CUDA = "1"
+PYTHONPATH = "./third_party/dift:$PYTHONPATH"
 
 [tasks]
 build = { cmd = "pip install -e ./third_party/Mask2Former && pip install -e ." }
