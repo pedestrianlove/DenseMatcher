@@ -15,7 +15,7 @@ build = { cmd = "pip install -e ./third_party/Mask2Former && pip install -e ." }
 test = { cmd = "jupyter nbconvert --execute --to notebook example.ipynb" }
 
 [dependencies]
-python = "3.9.*"
+python = "3.10.*"
 pip = ">=23,<26"
 ninja = "*"
 cmake = "*"
